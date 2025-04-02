@@ -36,7 +36,7 @@ const Membership = () => {
               </div>
             </div>
             
-            <button className="w-full bg-primary1 hover:bg-primary1-dark text-white font-semibold py-4 rounded-lg transition-colors text-lg">Chiedi di Entrare nel nostro Network</button>
+            <button className="w-full bg-primary1 hover:bg-primary1-dark text-white font-semibold py-4 rounded-lg transition-colors text-lg">Chiedi di Entrare nel nostro Network  info@duckily.it</button>
           </div>
         </div>
       </div>

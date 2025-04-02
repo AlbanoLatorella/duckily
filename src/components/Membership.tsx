@@ -14,7 +14,7 @@ const Membership = () => {
           <div className="p-8 md:p-12">
             <div className="flex flex-col md:flex-row items-center mb-8">
               <div className="w-24 h-24 flex items-center justify-center bg-primary1 rounded-full mb-6 md:mb-0 md:mr-8">
-                <img src="/lovable-uploads/8e91d731-0200-43dc-8b1e-9d63f6d01607.png" alt="Duckily Logo" className="w-16 h-16 object-contain" />
+                <img alt="Duckily Logo" className="w-16 h-16 object-contain" src="/lovable-uploads/2064e6ee-c340-4534-9145-e804b4ca4235.png" />
               </div>
               <h3 className="text-2xl md:text-3xl font-bold">Diventa Membro Duckily</h3>
             </div>

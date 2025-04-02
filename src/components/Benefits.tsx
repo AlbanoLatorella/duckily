@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Check, Globe, Users, Book, Briefcase, Calendar } from 'lucide-react';
+import { Check, Globe, Users, Briefcase, Calendar } from 'lucide-react';
 
 const BenefitItem = ({ icon, title, description }: { icon: React.ReactNode, title: string, description: string }) => {
   return (
@@ -26,14 +26,9 @@ const Benefits = () => {
       description: "Crea connessioni significative con imprenditori e professionisti che condividono i tuoi obiettivi."
     },
     {
-      icon: <Book size={24} />,
-      title: "Formazione Continua",
-      description: "Accedi a programmi formativi esclusivi per mantenerti aggiornato sulle ultime tendenze del mercato."
-    },
-    {
       icon: <Briefcase size={24} />,
       title: "Supporto Personalizzato",
-      description: "Ricevi assistenza legale e organizzativa su misura per le specifiche esigenze della tua attività."
+      description: "Ricevi assistenza organizzativa su misura per le specifiche esigenze della tua attività."
     },
     {
       icon: <Globe size={24} />,
@@ -56,7 +51,7 @@ const Benefits = () => {
             Entra nel network Duckily e scopri tutti i vantaggi dedicati ai nostri soci
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
           {benefits.map((benefit, index) => (
             <BenefitItem
               key={index}

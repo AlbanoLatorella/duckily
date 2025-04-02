@@ -110,4 +110,8 @@
   .section-subtitle {
     @apply text-xl md:text-2xl mb-6 md:mb-8 text-gray-600 font-opensans;
   }
+
+  .partner-logo {
+    @apply w-full h-auto object-contain max-h-24 transition-transform duration-300 hover:scale-105;
+  }
 }

@@ -24,15 +24,15 @@ const Footer = () => {
               <h4 className="text-lg font-semibold mb-4">Contatti</h4>
               <ul className="space-y-3">
                 <li className="flex items-center">
-                  <MapPin size={18} className="mr-2 text-coral" />
+                  <MapPin size={18} className="mr-2 text-primary1" />
                   <span>Roma, Italia</span>
                 </li>
                 <li className="flex items-center">
-                  <Mail size={18} className="mr-2 text-coral" />
+                  <Mail size={18} className="mr-2 text-primary1" />
                   <span>info@duckily.com</span>
                 </li>
                 <li className="flex items-center">
-                  <Phone size={18} className="mr-2 text-coral" />
+                  <Phone size={18} className="mr-2 text-primary1" />
                   <span>+39 06 12345678</span>
                 </li>
               </ul>
@@ -42,16 +42,16 @@ const Footer = () => {
               <h4 className="text-lg font-semibold mb-4">Links Rapidi</h4>
               <ul className="space-y-2">
                 <li>
-                  <a href="#chi-siamo" className="hover:text-coral transition-colors">Chi Siamo</a>
+                  <a href="#chi-siamo" className="hover:text-primary1 transition-colors">Chi Siamo</a>
                 </li>
                 <li>
-                  <a href="#benefici" className="hover:text-coral transition-colors">Benefici</a>
+                  <a href="#benefici" className="hover:text-primary1 transition-colors">Benefici</a>
                 </li>
                 <li>
-                  <a href="#membership" className="hover:text-coral transition-colors">Membership</a>
+                  <a href="#membership" className="hover:text-primary1 transition-colors">Membership</a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-coral transition-colors">Privacy Policy</a>
+                  <a href="#" className="hover:text-primary1 transition-colors">Privacy Policy</a>
                 </li>
               </ul>
             </div>

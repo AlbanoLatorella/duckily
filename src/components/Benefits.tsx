@@ -6,7 +6,7 @@ const BenefitItem = ({ icon, title, description }: { icon: React.ReactNode, titl
   return (
     <div className="benefit-card">
       <div className="flex items-start">
-        <div className="mr-4 text-coral-dark">
+        <div className="mr-4 text-primary1">
           {icon}
         </div>
         <div>
@@ -63,7 +63,6 @@ const Benefits = () => {
               icon={benefit.icon}
               title={benefit.title}
               description={benefit.description}
-              style={{ animationDelay: `${0.1 * (index + 1)}s` }}
             />
           ))}
         </div>

@@ -15,10 +15,10 @@ const Hero = () => {
               Duckily trasforma le risorse umane e imprenditoriali in opportunità concrete di sviluppo attraverso networking, formazione e supporto proattivo.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: '0.5s' }}>
-              <Button className="bg-duck-feet hover:bg-duck-feetDark text-white px-8 py-6 text-lg font-semibold">
+              <Button className="bg-primary1 hover:bg-primary1-dark text-white px-8 py-6 text-lg font-semibold">
                 Diventa Socio Oggi
               </Button>
-              <Button variant="outline" className="border-duck-feet text-duck-feetDark hover:bg-duck-feetLight/10 px-8 py-6 text-lg font-semibold">
+              <Button variant="outline" className="border-primary1 text-primary1-dark hover:bg-primary1-light/10 px-8 py-6 text-lg font-semibold">
                 Scopri di Più
               </Button>
             </div>

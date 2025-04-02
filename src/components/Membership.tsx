@@ -16,7 +16,7 @@ const Membership = () => {
         <div className="max-w-4xl mx-auto bg-gradient-to-br from-gray-50 to-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
           <div className="p-8 md:p-12">
             <div className="flex flex-col md:flex-row items-center mb-8">
-              <div className="w-24 h-24 flex items-center justify-center bg-coral-dark rounded-full mb-6 md:mb-0 md:mr-8">
+              <div className="w-24 h-24 flex items-center justify-center bg-primary1 rounded-full mb-6 md:mb-0 md:mr-8">
                 <img 
                   src="/lovable-uploads/8e91d731-0200-43dc-8b1e-9d63f6d01607.png" 
                   alt="Duckily Logo" 
@@ -28,28 +28,28 @@ const Membership = () => {
             
             <div className="space-y-4 mb-8">
               <div className="flex items-start">
-                <Check className="text-coral-dark mr-3 mt-1 flex-shrink-0" />
+                <Check className="text-primary1 mr-3 mt-1 flex-shrink-0" />
                 <p>Accesso a tutti gli eventi esclusivi di networking</p>
               </div>
               <div className="flex items-start">
-                <Check className="text-coral-dark mr-3 mt-1 flex-shrink-0" />
+                <Check className="text-primary1 mr-3 mt-1 flex-shrink-0" />
                 <p>Supporto personalizzato per la tua impresa</p>
               </div>
               <div className="flex items-start">
-                <Check className="text-coral-dark mr-3 mt-1 flex-shrink-0" />
+                <Check className="text-primary1 mr-3 mt-1 flex-shrink-0" />
                 <p>Opportunità di collaborazione con altri membri</p>
               </div>
               <div className="flex items-start">
-                <Check className="text-coral-dark mr-3 mt-1 flex-shrink-0" />
+                <Check className="text-primary1 mr-3 mt-1 flex-shrink-0" />
                 <p>Formazione continua attraverso workshop e seminari</p>
               </div>
               <div className="flex items-start">
-                <Check className="text-coral-dark mr-3 mt-1 flex-shrink-0" />
+                <Check className="text-primary1 mr-3 mt-1 flex-shrink-0" />
                 <p>Visibilità del tuo brand attraverso i nostri canali</p>
               </div>
             </div>
             
-            <button className="w-full bg-coral-dark hover:bg-coral text-white font-semibold py-4 rounded-lg transition-colors text-lg">
+            <button className="w-full bg-primary1 hover:bg-primary1-dark text-white font-semibold py-4 rounded-lg transition-colors text-lg">
               Entra nel nostro network di eccellenza — Diventa socio oggi stesso
             </button>
           </div>

@@ -72,10 +72,15 @@ export default {
 					DEFAULT: '#ff5252',
 					dark: '#ff1744',
 				},
-				duck: {
-					feet: '#FF9800',
-					feetDark: '#F57C00',
-					feetLight: '#FFB74D',
+				primary1: {
+					DEFAULT: '#ee7161',
+					light: '#f29589',
+					dark: '#d65a4a',
+				},
+				secondary1: {
+					DEFAULT: '#0e7076',
+					light: '#128f96',
+					dark: '#095256',
 				},
 			},
 			borderRadius: {

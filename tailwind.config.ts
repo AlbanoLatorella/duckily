@@ -72,6 +72,11 @@ export default {
 					DEFAULT: '#ff5252',
 					dark: '#ff1744',
 				},
+				duck: {
+					feet: '#FF9800',
+					feetDark: '#F57C00',
+					feetLight: '#FFB74D',
+				},
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

@@ -43,10 +43,10 @@ const Navbar = () => {
         
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8">
-          <a href="#chi-siamo" className="text-gray-800 hover:text-coral-dark font-medium transition-colors">Chi Siamo</a>
-          <a href="#benefici" className="text-gray-800 hover:text-coral-dark font-medium transition-colors">Benefici</a>
-          <a href="#membership" className="text-gray-800 hover:text-coral-dark font-medium transition-colors">Membership</a>
-          <Button className="bg-coral-dark hover:bg-coral text-white font-semibold">Diventa Socio</Button>
+          <a href="#chi-siamo" className="text-gray-800 hover:text-duck-feet font-medium transition-colors">Chi Siamo</a>
+          <a href="#benefici" className="text-gray-800 hover:text-duck-feet font-medium transition-colors">Benefici</a>
+          <a href="#membership" className="text-gray-800 hover:text-duck-feet font-medium transition-colors">Membership</a>
+          <Button className="bg-duck-feet hover:bg-duck-feetDark text-white font-semibold">Diventa Socio</Button>
         </div>
         
         {/* Mobile Menu Button */}
@@ -63,26 +63,26 @@ const Navbar = () => {
           <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
             <a 
               href="#chi-siamo" 
-              className="text-gray-800 hover:text-coral-dark font-medium py-2 transition-colors"
+              className="text-gray-800 hover:text-duck-feet font-medium py-2 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Chi Siamo
             </a>
             <a 
               href="#benefici" 
-              className="text-gray-800 hover:text-coral-dark font-medium py-2 transition-colors"
+              className="text-gray-800 hover:text-duck-feet font-medium py-2 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Benefici
             </a>
             <a 
               href="#membership" 
-              className="text-gray-800 hover:text-coral-dark font-medium py-2 transition-colors"
+              className="text-gray-800 hover:text-duck-feet font-medium py-2 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Membership
             </a>
-            <Button className="bg-coral-dark hover:bg-coral text-white font-semibold w-full">
+            <Button className="bg-duck-feet hover:bg-duck-feetDark text-white font-semibold w-full">
               Diventa Socio
             </Button>
           </div>

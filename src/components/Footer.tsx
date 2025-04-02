@@ -1,18 +1,11 @@
-
 import React from 'react';
 import { Mail, Phone, MapPin } from 'lucide-react';
-
 const Footer = () => {
-  return (
-    <footer className="bg-gray-900 text-white py-12">
+  return <footer className="bg-gray-900 text-white py-12">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between">
           <div className="mb-8 md:mb-0">
-            <img 
-              src="/lovable-uploads/8e91d731-0200-43dc-8b1e-9d63f6d01607.png" 
-              alt="Duckily Logo" 
-              className="h-16 mb-4"
-            />
+            <img alt="Duckily Logo" className="h-16 mb-4" src="/lovable-uploads/51644131-b2ef-4a4d-abee-6d73f5b6364d.png" />
             <h3 className="text-xl font-semibold mb-2">Duckily: Seamless Solutions</h3>
             <p className="text-gray-400 max-w-md">
               Duckily unisce il dinamismo dell'innovazione alla solidità dell'esperienza, creando un ecosistema dove idee e opportunità fluiscono naturalmente.
@@ -31,10 +24,7 @@ const Footer = () => {
                   <Mail size={18} className="mr-2 text-primary1" />
                   <span>info@duckily.com</span>
                 </li>
-                <li className="flex items-center">
-                  <Phone size={18} className="mr-2 text-primary1" />
-                  <span>+39 06 12345678</span>
-                </li>
+                
               </ul>
             </div>
             
@@ -62,8 +52,6 @@ const Footer = () => {
           <p>&copy; {new Date().getFullYear()} Duckily. Tutti i diritti riservati.</p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;

@@ -36,6 +36,11 @@ const Partners = () => {
       name: "PM&P",
       logo: "/lovable-uploads/9033c787-e922-4e11-984a-54b409d2113d.png",
     },
+    {
+      id: 6,
+      name: "PM&P",
+      logo: "/lovable-uploads/9033c787-e922-4e11-984a-54b409d2113d.png",
+    },
   ];
 
   return (

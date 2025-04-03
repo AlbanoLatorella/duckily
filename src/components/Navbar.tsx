@@ -1,11 +1,13 @@
 
 import React, { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Flag } from 'lucide-react';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { language, toggleLanguage, t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -43,14 +45,34 @@ const Navbar = () => {
         
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8">
-          <a href="#chi-siamo" className="text-gray-800 hover:text-primary1 font-medium transition-colors">Chi Siamo</a>
-          <a href="#benefici" className="text-gray-800 hover:text-primary1 font-medium transition-colors">Benefici</a>
-          <a href="#membership" className="text-gray-800 hover:text-primary1 font-medium transition-colors">Membership</a>
-          <Button className="bg-primary1 hover:bg-primary1-dark text-white font-semibold">Diventa Socio</Button>
+          <a href="#chi-siamo" className="text-gray-800 hover:text-[#ee7161] font-medium transition-colors">{t('chiSiamo')}</a>
+          <a href="#benefici" className="text-gray-800 hover:text-[#ee7161] font-medium transition-colors">{t('benefici')}</a>
+          <a href="#membership" className="text-gray-800 hover:text-[#ee7161] font-medium transition-colors">{t('membership')}</a>
+          <a 
+            href="mailto:info@duckily.it?subject=Informazioni%20network%20duckily" 
+            className="bg-[#ee7161] hover:bg-[#d65e4f] text-white font-semibold py-2 px-4 rounded transition-colors"
+          >
+            {t('diventaSocio')}
+          </a>
+          <button 
+            onClick={toggleLanguage} 
+            className="flex items-center text-gray-800 hover:text-[#ee7161] transition-colors ml-2"
+            aria-label={`Switch to ${language === 'it' ? 'English' : 'Italian'}`}
+          >
+            <Flag size={20} className="mr-1" />
+            <span className="uppercase font-medium">{language === 'it' ? 'EN' : 'IT'}</span>
+          </button>
         </div>
         
         {/* Mobile Menu Button */}
-        <div className="md:hidden">
+        <div className="md:hidden flex items-center">
+          <button 
+            onClick={toggleLanguage} 
+            className="flex items-center text-gray-800 hover:text-[#ee7161] transition-colors mr-4"
+            aria-label={`Switch to ${language === 'it' ? 'English' : 'Italian'}`}
+          >
+            <Flag size={20} />
+          </button>
           <button onClick={toggleMenu} className="text-gray-800 focus:outline-none">
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -63,28 +85,31 @@ const Navbar = () => {
           <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
             <a 
               href="#chi-siamo" 
-              className="text-gray-800 hover:text-primary1 font-medium py-2 transition-colors"
+              className="text-gray-800 hover:text-[#ee7161] font-medium py-2 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              Chi Siamo
+              {t('chiSiamo')}
             </a>
             <a 
               href="#benefici" 
-              className="text-gray-800 hover:text-primary1 font-medium py-2 transition-colors"
+              className="text-gray-800 hover:text-[#ee7161] font-medium py-2 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              Benefici
+              {t('benefici')}
             </a>
             <a 
               href="#membership" 
-              className="text-gray-800 hover:text-primary1 font-medium py-2 transition-colors"
+              className="text-gray-800 hover:text-[#ee7161] font-medium py-2 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              Membership
+              {t('membership')}
             </a>
-            <Button className="bg-primary1 hover:bg-primary1-dark text-white font-semibold w-full">
-              Diventa Socio
-            </Button>
+            <a 
+              href="mailto:info@duckily.it?subject=Informazioni%20network%20duckily" 
+              className="bg-[#ee7161] hover:bg-[#d65e4f] text-white font-semibold py-2 px-4 rounded transition-colors text-center"
+            >
+              {t('diventaSocio')}
+            </a>
           </div>
         </div>
       )}

@@ -8,8 +8,11 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const Partners = () => {
+  const { t } = useLanguage();
+  
   const partners = [
     {
       id: 1,
@@ -38,8 +41,8 @@ const Partners = () => {
     },
     {
       id: 6,
-      name: "PM&P",
-      logo: "/lovable-uploads/9033c787-e922-4e11-984a-54b409d2113d.png",
+      name: "Linneo",
+      logo: "/lovable-uploads/a8214986-7a2a-43fb-9d91-8e3a1a3ce230.png",
     },
   ];
 
@@ -47,9 +50,9 @@ const Partners = () => {
     <section id="associati" className="py-16 md:py-24">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-12">
-          <h2 className="section-title">I Nostri Associati</h2>
+          <h2 className="section-title">{t('nostriAssociati')}</h2>
           <p className="section-subtitle">
-            Un network di eccellenze che collaborano per il successo comune
+            {t('networkEccellenze')}
           </p>
         </div>
         

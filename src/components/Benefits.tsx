@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Check, Globe, Users, Briefcase, Calendar } from 'lucide-react';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const BenefitItem = ({ icon, title, description }: { icon: React.ReactNode, title: string, description: string }) => {
   return (
@@ -19,26 +20,28 @@ const BenefitItem = ({ icon, title, description }: { icon: React.ReactNode, titl
 };
 
 const Benefits = () => {
+  const { t } = useLanguage();
+  
   const benefits = [
     {
       icon: <Users size={24} />,
-      title: "Networking Strategico",
-      description: "Crea connessioni significative con imprenditori e professionisti che condividono i tuoi obiettivi."
+      title: t('networkingStrategico'),
+      description: t('networkingDesc')
     },
     {
       icon: <Briefcase size={24} />,
-      title: "Supporto Personalizzato",
-      description: "Ricevi assistenza organizzativa su misura per le specifiche esigenze della tua attività."
+      title: t('supportoPersonalizzato'),
+      description: t('supportoDesc')
     },
     {
       icon: <Globe size={24} />,
-      title: "Rappresentanza Istituzionale",
-      description: "Beneficia della nostra presenza presso istituzioni pubbliche e private per far sentire la tua voce."
+      title: t('rappresentanzaIstituzionale'),
+      description: t('rappresentanzaDesc')
     },
     {
       icon: <Calendar size={24} />,
-      title: "Iniziative Culturali e Sociali",
-      description: "Partecipa a eventi esclusivi che combinano networking, cultura e responsabilità sociale."
+      title: t('iniziativeCulturali'),
+      description: t('iniziativeDesc')
     }
   ];
 
@@ -46,9 +49,9 @@ const Benefits = () => {
     <section id="benefici" className="py-16 md:py-24 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-12">
-          <h2 className="section-title">I Nostri Benefici</h2>
+          <h2 className="section-title">{t('beneficiTitle')}</h2>
           <p className="section-subtitle">
-            Entra nel network Duckily e scopri tutti i vantaggi dedicati ai nostri soci
+            {t('beneficiDesc')}
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
